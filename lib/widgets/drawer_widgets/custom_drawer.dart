@@ -1,9 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:responsive_dashboard/widgets/drawer_widgets/active_and_inactive_drawer.dart';
 import 'package:responsive_dashboard/widgets/drawer_widgets/user_info_list_tile.dart';
-import '../../model/drawer_item_model.dart';
 import '../../utils/app_images.dart';
 import 'drawer_items_list_view.dart';
 import 'settings_and_logout_drawer_list_view.dart';
