@@ -1,5 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:responsive_dashboard/widgets/drawer_widgets/active_and_inactive_drawer.dart';
 import 'package:responsive_dashboard/widgets/drawer_widgets/user_info_list_tile.dart';
+import '../../model/drawer_item_model.dart';
 import '../../utils/app_images.dart';
 import 'drawer_items_list_view.dart';
 import 'settings_and_logout_drawer_list_view.dart';
@@ -40,21 +44,21 @@ class _CustomDrawerState extends State<CustomDrawer> {
             currentIndex: currentIndex,
             setCurrentIndex: setCurrentIndex,
           ),
-          const SliverFillRemaining(
+          SliverFillRemaining(
             hasScrollBody: false,
-            child: Expanded(
-              child: SizedBox(),
+            child: Column(
+              children: [
+                const SizedBox(height: 20),
+                const Expanded(
+                  child: SizedBox(),
+                ),
+                SettingsAndLogoutDrawerListView(
+                  currentIndex: currentIndex,
+                  setCurrentIndex: setCurrentIndex,
+                ),
+                const SizedBox(height: 48),
+              ],
             ),
-          ),
-          //  SliverToBoxAdapter(
-          //   child: SizedBox(height: MediaQuery.sizeOf(context).height/2.7),
-          // ),
-          SettingsAndLogoutDrawerListView(
-            currentIndex: currentIndex,
-            setCurrentIndex: setCurrentIndex,
-          ),
-          const SliverToBoxAdapter(
-            child: SizedBox(height: 48),
           ),
         ],
       ),
