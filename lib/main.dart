@@ -18,7 +18,7 @@ class ResponsiveDashBoard extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const DashBoardView(),
+      home: DashBoardView(),
     );
   }
 }
