@@ -19,6 +19,6 @@ final List<DrawerItemModel> items = [
       title: 'My Investments', image: Assets.imagesMyInvestments),
 ];
 final List<DrawerItemModel> settingsAndLogoutItems = [
-  const DrawerItemModel(image: Assets.imagesSettings, title: 'Settings System'),
+  const DrawerItemModel(image: Assets.imagesSettings, title:  'System Settings'),
   const DrawerItemModel(image: Assets.imagesLogout, title: 'Logout account'),
 ];
