@@ -14,9 +14,7 @@ class AllExpensesHeader extends StatelessWidget {
           'All Expenses',
           style: AppStyles.styleSemiBold20(context),
         ),
-        const Expanded(
-          child: SizedBox(),
-        ),
+       const Spacer(),
         Container(
           padding: const EdgeInsets.all(8),
           decoration: ShapeDecoration(
