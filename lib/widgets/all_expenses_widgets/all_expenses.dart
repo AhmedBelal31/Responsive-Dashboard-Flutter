@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'all_expenses_header.dart';
 import 'all_expenses_list.dart';
@@ -16,7 +15,7 @@ class AllExpenses extends StatelessWidget {
           borderRadius: BorderRadius.circular(12.0),
         ),
       ),
-      child: Column(
+      child:const Column(
         children: [
           AllExpensesHeader(),
           AllExpensesItemsList(),
