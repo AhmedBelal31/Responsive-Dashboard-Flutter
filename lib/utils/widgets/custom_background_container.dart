@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+
+class CustomBackgroundContainer extends StatelessWidget {
+  final Widget child ;
+  const CustomBackgroundContainer({super.key , required this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    return  Container(
+      decoration: ShapeDecoration(
+        color: const Color(0xFF4EB7F2),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12.0),
+        ),
+      ),
+      child: child,
+    );
+  }
+}
