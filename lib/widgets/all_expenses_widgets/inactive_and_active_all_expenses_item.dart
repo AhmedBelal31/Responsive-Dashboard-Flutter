@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:responsive_dashboard/utils/widgets/custom_background_container.dart';
 import '../../model/all_expenses_item_model.dart';
 import '../../utils/app_styles.dart';
+import 'custom_expenses_container.dart';
 import 'expenses_item_header.dart';
 
 class InActiveAllExpenses extends StatelessWidget {
@@ -17,19 +16,7 @@ class InActiveAllExpenses extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
-      child: Container(
-        // color:const  Color(0xFF4EB7F2),
-        decoration: ShapeDecoration(
-          color: Colors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12.0),
-            side: const BorderSide(
-              width: 1,
-              color: Color(0xFFF1F1F1),
-            ),
-          ),
-        ),
-
+      child: CustomExpensesContainer(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
@@ -76,7 +63,8 @@ class ActiveAllExpenses extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
-      child: CustomBackgroundContainer(
+      child: CustomExpensesContainer(
+        containerColor: const Color(0xFF4EB7F2),
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(

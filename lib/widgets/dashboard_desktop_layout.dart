@@ -15,24 +15,22 @@ class DashboardDesktopLayout extends StatelessWidget {
         const SizedBox(width: 32),
         Expanded(
           flex: 3,
-          child: Padding(
-            padding: const EdgeInsets.only(top: 20),
-            child: Column(
-              children: [
+          child: Column(
+            children: [
+              AllExpenses(),
 
-                AllExpenses(),
-                // SizedBox(height: 20),
-                // Expanded(
-                //   flex: 2,
-                //   child: Container(
-                //     decoration: BoxDecoration(
-                //       color: Colors.teal,
-                //       borderRadius: BorderRadius.circular(20),
-                //     ),
-                //   ),
-                // ),
-              ],
-            ),
+
+              // SizedBox(height: 20),
+              // Expanded(
+              //   flex: 2,
+              //   child: Container(
+              //     decoration: BoxDecoration(
+              //       color: Colors.teal,
+              //       borderRadius: BorderRadius.circular(20),
+              //     ),
+              //   ),
+              // ),
+            ],
           ),
         ),
         const SizedBox(width: 32),

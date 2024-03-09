@@ -8,7 +8,7 @@ class CustomBackgroundContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Container(
       decoration: ShapeDecoration(
-        color: const Color(0xFF4EB7F2),
+        color:Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.0),
         ),
