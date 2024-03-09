@@ -16,4 +16,3 @@ class DrawerItem extends StatelessWidget {
         : InActiveDrawerItem(drawerItemModel: drawerItemModel);
   }
 }
-

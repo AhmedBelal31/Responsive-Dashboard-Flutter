@@ -1,4 +1,3 @@
-
 import '../utils/app_images.dart';
 
 class AllExpensesItemModel {
@@ -14,9 +13,20 @@ class AllExpensesItemModel {
   });
 }
 
-List<AllExpensesItemModel> allExpansesItems =const [
-  AllExpensesItemModel(image: Assets.imagesBalance, title: 'Balance', date: 'April 2024', price: 20.129),
-  AllExpensesItemModel(image: Assets.imagesIncome, title: 'Income', date: 'April 2024', price: 20.129),
-  AllExpensesItemModel(image: Assets.imagesExpenses, title: 'Expenses', date: 'April 2024', price: 20.129),
-
-] ;
+List<AllExpensesItemModel> allExpansesItems = const [
+  AllExpensesItemModel(
+      image: Assets.imagesBalance,
+      title: 'Balance',
+      date: 'April 2024',
+      price: 20.129),
+  AllExpensesItemModel(
+      image: Assets.imagesIncome,
+      title: 'Income',
+      date: 'April 2024',
+      price: 20.129),
+  AllExpensesItemModel(
+      image: Assets.imagesExpenses,
+      title: 'Expenses',
+      date: 'April 2024',
+      price: 20.129),
+];
