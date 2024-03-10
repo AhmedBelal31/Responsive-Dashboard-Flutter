@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/widgets/drawer_widgets/user_info_list_tile.dart';
+import '../../model/user_info_model.dart';
 import '../../utils/app_images.dart';
 import 'drawer_items_list_view.dart';
 import 'settings_and_logout_drawer_list_view.dart';
@@ -27,12 +28,8 @@ class _CustomDrawerState extends State<CustomDrawer> {
       color: Colors.white,
       child: CustomScrollView(
         slivers: [
-          const SliverToBoxAdapter(
-            child: UserInfoListTile(
-              title: 'Lekan Okeowo',
-              subTitle: 'demo@gmail.com',
-              image: Assets.imagesAvatar1,
-            ),
+           SliverToBoxAdapter(
+            child: UserInfoListTile(userInfoModel: userInfoItems[0],),
           ),
           const SliverToBoxAdapter(
             child: SizedBox(height: 8),

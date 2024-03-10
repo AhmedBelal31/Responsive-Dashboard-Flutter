@@ -14,22 +14,23 @@ class DashboardDesktopLayout extends StatelessWidget {
         const Expanded(
           child: CustomDrawer(),
         ),
-        const SizedBox(width: 32),
+      const SizedBox(width: 32),
         Expanded(
           flex: 3,
-          child: CustomScrollView(
-            slivers: [
-              SliverToBoxAdapter(
-                child: AllExpenses(),
-              ),
-              SliverToBoxAdapter(
-                child: const SizedBox(height: 32),
-              ),
-              SliverFillRemaining(
-                hasScrollBody: false,
-                child: QuickInvoice(),
-              )
-            ],
+          child: Padding(
+            padding: const EdgeInsets.only(top:20),
+            child: CustomScrollView(
+              slivers: [
+                SliverToBoxAdapter(
+                  child: AllExpenses(),
+                ),
+                SliverToBoxAdapter(child: const SizedBox(height: 32)),
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: QuickInvoice(),
+                )
+              ],
+            ),
           ),
         ),
         const SizedBox(width: 32),

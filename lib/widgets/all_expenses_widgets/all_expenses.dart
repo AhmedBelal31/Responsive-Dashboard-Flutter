@@ -15,7 +15,7 @@ class AllExpenses extends StatelessWidget {
           borderRadius: BorderRadius.circular(12.0),
         ),
       ),
-      child:const Column(
+      child: const Column(
         children: [
           AllExpensesHeader(),
           AllExpensesItemsList(),

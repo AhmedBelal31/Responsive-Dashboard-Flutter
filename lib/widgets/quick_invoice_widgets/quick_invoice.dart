@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/utils/app_styles.dart';
 import 'package:responsive_dashboard/utils/widgets/custom_background_container.dart';
+import 'latest_transaction.dart';
+import 'quick_invoice_header.dart';
 
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});
@@ -11,34 +13,10 @@ class QuickInvoice extends StatelessWidget {
       child: Column(
         children: [
           QuickInvoiceHeader(),
+          SizedBox(height: 20),
+          LatestTransaction(),
         ],
       ),
-    );
-  }
-}
-
-class QuickInvoiceHeader extends StatelessWidget {
-  const QuickInvoiceHeader({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text(
-          'Quick Invoice',
-          style: AppStyles.styleSemiBold20(context),
-        ),
-        const Spacer(),
-        Container(
-          width: 48,
-          height: 48,
-          decoration: const ShapeDecoration(
-            color: Color(0xFFFAFAFA),
-            shape: OvalBorder(),
-          ),
-          child: const Icon(Icons.add , color: Color(0xff4EB7F2),),
-        ),
-      ],
     );
   }
 }
