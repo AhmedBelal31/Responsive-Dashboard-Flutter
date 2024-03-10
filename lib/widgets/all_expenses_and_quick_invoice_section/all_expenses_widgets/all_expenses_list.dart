@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../model/all_expenses_item_model.dart';
+import '../../../model/all_expenses_item_model.dart';
 import 'all_expenses_item.dart';
 
 class AllExpensesItemsList extends StatefulWidget {

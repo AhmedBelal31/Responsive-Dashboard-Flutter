@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../model/all_expenses_item_model.dart';
+import '../../../model/all_expenses_item_model.dart';
+
 
 class ExpensesItemHeader extends StatelessWidget {
   const ExpensesItemHeader({

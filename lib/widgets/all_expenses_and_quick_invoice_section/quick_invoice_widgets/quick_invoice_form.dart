@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/quick_invoice_widgets/title_text_field.dart';
 import 'custom_button.dart';
+import 'title_text_field.dart';
 
 class QuickInvoiceForm extends StatelessWidget {
   const QuickInvoiceForm({super.key});

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../model/user_info_model.dart';
-import '../drawer_widgets/user_info_list_tile.dart';
+import '../../../model/user_info_model.dart';
+import '../../drawer_widgets/user_info_list_tile.dart';
+
 
 class LatestTransactionListView extends StatelessWidget {
   const LatestTransactionListView({super.key});
