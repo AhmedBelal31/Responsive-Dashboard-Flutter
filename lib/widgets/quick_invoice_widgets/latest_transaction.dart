@@ -1,9 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
-import 'package:responsive_dashboard/widgets/drawer_widgets/user_info_list_tile.dart';
-
-import '../../model/user_info_model.dart';
+import 'latest_transaction_list_view.dart';
+import 'quick_invoice_form.dart';
 
 class LatestTransaction extends StatelessWidget {
   const LatestTransaction({super.key});
@@ -18,28 +16,12 @@ class LatestTransaction extends StatelessWidget {
           style: AppStyles.styleMedium16(context),
         ),
         const LatestTransactionListView(),
-      ],
-    );
-  }
-}
-
-class LatestTransactionListView extends StatelessWidget {
-  const LatestTransactionListView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 90,
-      child: ListView.builder(
-        physics: const BouncingScrollPhysics(),
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) => IntrinsicWidth(
-          child: UserInfoListTile(
-            userInfoModel: userInfoItems[index],
-          ),
+        const Divider(
+          height: 48,
+          color: Color(0xffF1F1F1),
         ),
-        itemCount: userInfoItems.length,
-      ),
+        const QuickInvoiceForm(),
+      ],
     );
   }
 }
