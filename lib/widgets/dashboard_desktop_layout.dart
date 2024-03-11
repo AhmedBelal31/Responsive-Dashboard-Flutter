@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'all_expenses_and_quick_invoice_section/all_expenses_and_quick_invoice_section.dart';
+import 'card_section/card_section.dart';
 import 'drawer_widgets/custom_drawer.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
@@ -7,21 +8,13 @@ class DashboardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
-        const Expanded(child: CustomDrawer()),
-        const SizedBox(width: 32),
-        const AllExpensesAndQuickInvoiceSection(),
-        const SizedBox(width: 32),
-        Expanded(
-          flex: 2,
-          child: Padding(
-            padding: const EdgeInsets.only(top: 20),
-            child: Container(
-              color: Colors.yellow,
-            ),
-          ),
-        ),
+        Expanded(child: CustomDrawer()),
+        SizedBox(width: 32),
+        AllExpensesAndQuickInvoiceSection(),
+        SizedBox(width: 32),
+        CardSection(),
       ],
     );
   }
