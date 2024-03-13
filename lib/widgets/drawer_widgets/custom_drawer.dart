@@ -16,7 +16,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
   int currentIndex = 0;
 
   void setCurrentIndex(int index) {
-    print('index is $index');
+
     setState(() {
       currentIndex = index;
     });

@@ -4,9 +4,8 @@ import 'detailed_income_chart.dart';
 import 'income_chart.dart';
 import 'income_details.dart';
 
-
-class IncomSectionBody extends StatelessWidget {
-  const IncomSectionBody({
+class IncomeSectionBody extends StatelessWidget {
+  const IncomeSectionBody({
     super.key,
   });
 

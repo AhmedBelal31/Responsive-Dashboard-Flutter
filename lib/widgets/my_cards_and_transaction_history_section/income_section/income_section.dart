@@ -12,7 +12,7 @@ class IncomeSection extends StatelessWidget {
         child: Column(
       children: [
         IncomeSectionHeader(),
-        IncomSectionBody(),
+        IncomeSectionBody(),
       ],
     ));
   }
