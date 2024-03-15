@@ -1,9 +1,17 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/views/dashboard_view.dart';
+import 'package:responsive_dashboard/widgets/dashboard_mobile_layout.dart';
 
 void main() {
-  runApp(const ResponsiveDashBoard());
+  runApp(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => const ResponsiveDashBoard(), // Wrap your app
+    ),
+  );
 }
 
 class ResponsiveDashBoard extends StatelessWidget {
@@ -22,7 +30,9 @@ class ResponsiveDashBoard extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: DashBoardView(),
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
+      home: const DashBoardView(),
     );
   }
 }
