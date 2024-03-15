@@ -26,7 +26,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      width: MediaQuery.sizeOf(context).width *.4,
+      width: MediaQuery.sizeOf(context).width *.5,
       child: CustomScrollView(
         slivers: [
            SliverToBoxAdapter(
