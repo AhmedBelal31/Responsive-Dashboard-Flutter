@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/utils/app_styles.dart';
 import 'package:responsive_dashboard/widgets/my_cards_and_transaction_history_section/transaction_history/transction_history_list_view.dart';
 import 'transaction_history_header.dart';
 
@@ -7,27 +8,21 @@ class TransactionHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TransactionHistoryHeader(),
-        SizedBox(
+        const TransactionHistoryHeader(),
+        const SizedBox(
           height: 20,
         ),
         Text(
           '13 April 2022',
-          style: TextStyle(
-            color: Color(0xFFAAAAAA),
-            fontSize: 16,
-            fontFamily: 'Montserrat',
-            fontWeight: FontWeight.w500,
-            height: 0,
-          ),
+          style: AppStyles.styleMedium16(context),
         ),
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
-        TransactionHistoryListView(),
+        const TransactionHistoryListView(),
       ],
     );
   }
